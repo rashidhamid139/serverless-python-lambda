@@ -1,0 +1,31 @@
+service: app
+
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: "dev"
+  region: "us-east-1"
+
+  environment:
+    REGION_NAME: "us-east-1"
+    ACCESS_KEY: "AKIAXDHL2F222OXZ6UUA"
+    SECRET_KEY: "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"
+
+functions:
+  hello:
+    handler: handler.hello
+
+
+  # sendEmail:
+  #   handler: handler:sendEmail
+  #   description: This function will send an email
+  #   events:
+  #     - http:
+  #         path: send-email
+  #         method: post
+  #         integration: lambda
+  #         cors: true
+  #         response:
+  #           headers:
+  #             "Access Control Allow Origin"
