@@ -9,8 +9,8 @@ provider:
 
   environment:
     REGION_NAME: "us-east-1"
-    ACCESS_KEY: "AKIAXDHL2F222OXZ6UUA"
-    SECRET_KEY: "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"
+    ACCESS_KEY: ""
+    SECRET_KEY: ""
 
 functions:
   hello:
